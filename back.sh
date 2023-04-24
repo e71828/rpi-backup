@@ -117,9 +117,9 @@ rsync --force -rltWDEgop --delete --stats --progress \
     --exclude "/run" \
     --exclude "/snap" \
     --exclude "/sys" \
-    --exclude "/tmp" \
+    --exclude "/tmp/*" \
     --exclude=/var/log \
-    --exclude=/var/tmp \
+    --exclude=/var/tmp/* \
     --exclude=/var/cache/apt/archives \
     --exclude=/usr/src/linux-headers* \
     --exclude=/home/*/.gvfs \
